@@ -5,7 +5,12 @@ import empresas.*
 
 describe "etapa 1" {
 	
-	const sanMartin = new Universidad()
+	// TODO Esta forma es más fácil de leer (y te muestra un error que estaba oculto)
+	const sanMartin = new Universidad(
+		provincia = "Buenos Aires",
+		honorariosPorHora = 3500
+	)
+
 	const rosario = new Universidad()
 	const corrientes = new Universidad()
 	const hurlingham = new Universidad()
@@ -16,8 +21,6 @@ describe "etapa 1" {
 	const empresa = new Empresa()
 	
 	fixture {
-		sanMartin.provincia("Buenos Aires")
-		sanMartin.honorariosPorHora(3500)
 		
 		rosario.provincia("Santa Fe")
 		rosario.honorariosPorHora(2800)

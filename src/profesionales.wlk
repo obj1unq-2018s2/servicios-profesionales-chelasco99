@@ -9,7 +9,8 @@ class ProfesionalAsociado {
 	method provinciasDondePuedeTrabajar() { return #{"Entre Ríos", "Corrientes", "Santa Fe"} }
 	
 	method honorariosPorHora() { return 3000 }
-	
+
+	// TODO Acá el IDE te está marcando el error, prestale atención!	
 	method cobrarImporteDeDinero(monto) { self.asociacionDeProfesionalesDelLitoral().totalRecaudado(monto) }
 }
 
@@ -41,6 +42,7 @@ class ProfesionalLibre {
 	method universidad(univ) { universidad = univ }
 	
 	method pasarDinero(persona,monto) {
+		// TODO Incompleto
 		
 	}
 
